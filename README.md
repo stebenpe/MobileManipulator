@@ -161,13 +161,17 @@ Voor dit project is gekozen voor een NVIDIA Jetson AGX orin 64GB developer kit. 
 ## 9. Maak onderdelen
 Voor het maken van de MoMa zijn verschilende onderdelen gemaakt. Van de watersnijder tot de 3D printer. In het mapje [maak onderdelen](https://github.com/stebenpe/MobileManipulator/tree/main/maak%20onderdelen) is hier meer over te vinden.
 
-## 10. Ros2
+## 10. Besturingskast
+Op de besturingskast zit de safety PLC, embedded AI computer en de DC-DC converters. Er is ook wat ruimte overgehouden voor toekomstige uitbreidingen. Voor meer informatie over de besturingskast kan je de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/besturingskast) bekijken van de map besturingskast.
 
 
-## 11. Conclusie
+## 11. Ros2
+Hier veranderd momenteel nog te veel in om documentatie over te schrijven.
 
+## 12. Conclusie
+Er is nog geen zekerheid over de ideeen en dus nog geen conclusie.
 
-## 12. Bronnen lijst
+## 13. Bronnen lijst
 
 
 [^1]: Gemaakt door Steven Pennock 2023.

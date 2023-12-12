@@ -46,7 +46,7 @@ Hierin zit het menu van de site voor de pagina's en de login/logout.
 
 
 
-### Menu bar
+### 3.1 Menu bar
 Op de hoofdpagina zit een link naar de sub pagina's. Dit gaat als volgt:
 
 ```HTML
@@ -75,7 +75,7 @@ Voor de telefoon is er een hamburger menu gemaakt. dit ziet er als volgt uit
 </div>
 ```
 
-### Login/logout
+### 3.2 Login/logout
 De login/logout is bedoeld om uiteindelijk met google firebase te werken maar dit is nog niet geinplementeerd.
 Voor nu ziet dit er als volgt uit.
 
@@ -181,10 +181,10 @@ De sub pagina's worden bij de App.vue weergegeven door de volgende lijn:
 Dit zijn de volgende pagina's: 
 
 
-### Home
+### 4.1 Home
 De home pagina is de pagina die als eerst voor komt bij het openen van de site.
 
-#### Stats
+#### 4.1.1 Stats
 Op deze pagina zijn de stats van de robot te zien op de site:
 ```HTML
 <div class="card text-center col-12 mt-1 w-100">
@@ -193,7 +193,7 @@ Op deze pagina zijn de stats van de robot te zien op de site:
 </div>
 ```
 
-#### Progress
+#### 4.1.2 Progress
 De progress bar van de gemaakte order. Hierbij is ook een link naar de child component voor de data die van ros2 binnen komt in de home page:
 ```HTML
 <div>
@@ -258,7 +258,7 @@ created() {
 }
 ```
 
-#### Iframe en video
+#### 4.1.3 Iframe en video
 Een iframe en video component. Hierbij is de iframe meer een test en zal deze in de toekomst worden gebruikt voor de 3D visualisatie van de robot:
 ```HTML
 <div class="col-md-6">
@@ -280,7 +280,7 @@ Een iframe en video component. Hierbij is de iframe meer een test en zal deze in
 </div>
 ```
 
-#### Test bridge
+#### 4.1.4 Test bridge
 En als laatste de testbridge component:
 ```HTML
 <div class="card col-12 mt-1 w-100">
@@ -289,10 +289,10 @@ En als laatste de testbridge component:
 ```
 
 
-### About
+### 4.2 About
 Op de about pagina staat de hoofdpagina van deze github repo
 
-### Order
+### 4.3 Order
 Op de order pagina zijn alle drankje te zien welke besteld kunnen worden. deze worden gecreerd door het OrderProduct.vue component meerdere keren aan te maken maar met verschilende data:
 ```HTML
 <div>
@@ -364,7 +364,7 @@ handleOrder(options) {
 ## 5. components
 Zoals hierboven te zien is zijn er een aantal child components die in de verschilende pagina's worden gebruikt. Deze worden hier uitgelegd:
 
-### Map selection
+### 5.1 Map selection
 De map selection is een overlay dat over de pagina word weergegeven. De map selection wordt geopent zodra er word geklikt op "select on Map" bij het product option menu.
 De map wordt weergegeven met een .png en is op bepaalde plekken klikbaar door middel van een map area, deze foto met area's wordt ook aangepast als deze op een telefoon wordt weergegeven:
 ```HTML
@@ -408,7 +408,7 @@ getCoords(room) {
 },
 ```
 
-### Order product
+### 5.2 Order product
 De order product laat een te bestellen drankje zien met een foto, naam, calorieen en een order knop.
 
 De foto's worden als volgt laten zien:
@@ -474,7 +474,7 @@ Het child component dat de opties van het drankje laat zien zoals sterkte en sui
 ></product-options-modal>
 ```
 
-### Product option
+### 5.3 Product option
 In de product option component zijn de mogelijke opties van de drankjes te zien. Dit is per drankje weer anders, bij koffie heb je suiker en sterkte en bij chocolade melk niks. Dit is gedaan door de volgende if statements:
 ```HTML
 <div 
@@ -593,7 +593,7 @@ order() {
 },
 ```
 
-### Progress bar
+### 5.4 Progress bar
 De progress bar laat de huidige status van de bestelling zien. Dit laat de E.T.A. zien:
 ```HTML
 <p 
@@ -681,7 +681,7 @@ Vervolgens worden logo's eronder weergegeven van de statusen order gemaakt, robo
 </div>
 ```
 De progress bar is ook zo gemaakt dat hij de indeling veranderd op een telefoon.
-### Sensors
+### 5.5 Sensors
 De robot stats worden weergegeven door het sensor component. Dit wordt gedaan door middel van een tabel en gaat als volgt:
 ```HTML
 <table class="table custom-table">
@@ -753,7 +753,7 @@ De robot stats worden weergegeven door het sensor component. Dit wordt gedaan do
 </table>
 ```
 
-### Side menu
+### 5.6 Side menu
 De side menu wordt alleen weergegeven op een telefoon. Deze is nu nog heel simpel gemaakt maar wordt in de toekomst wel nog aangepast. Het ziet er nu als volgt uit:
 ```HTML
 <div class="side-menu" :class="{ 'menu-visible': isVisible }">
@@ -764,7 +764,7 @@ De side menu wordt alleen weergegeven op een telefoon. Deze is nu nog heel simpe
 </div>
 ```
 
-### Test bridge
+### 5.7 Test bridge
 De test bridge is er om een connectie met ros2 te controlleren. Deze geeft alle data weer van veranderingen in ros2 nodes, topics en services. Dit gaat als volgt:
 ```HTML
 <div>
@@ -777,5 +777,5 @@ De test bridge is er om een connectie met ros2 te controlleren. Deze geeft alle 
 </div>
 ```
 
-### Video
+### 5.8 Video
 Het video component moet uiteindelijk een live beeld van de camera op de robot laten zien. Op dit moment is deze nog niet getest en afgemaakt.
