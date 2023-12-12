@@ -98,5 +98,5 @@ Omdat het helaas een keer is gebeurd dat een geleende LD-60 van de trap is geval
 ![3](../images/trap-sensor-voorkant.jpg)
 Vooraanzicht 3 trap sensoren.
 
-![4](../images/test-buigen.jpg)
+![4](../images/trap-sensor.jpg)
 Ingezoomd op 1 trap sensor

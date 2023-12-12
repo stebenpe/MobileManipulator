@@ -11,15 +11,17 @@ Gemaakt door: Steven Pennock
 
 Datum: 11 December 2023
 
+
+# Mobile Manipulator stage NHL-Stenden
+Op een luie manier koffie halen
+
+![moma](../images/moma-koffiemachine.jpg)
+
 # Samenvatting
 Ik ben Steven Pennock en ik heb als stage opdracht gekregen om koffie te halen.
-Nou heb ik natuurlijk helemaal geen zin om zelf iedere keer koffie te halen dus daarom ga ik een MoMa (Mobile Manupulator) maken.
-Dit is een rijdende robot met daarboven op een manipulator (robot arm) geplaatst.
+Nou heb ik natuurlijk helemaal geen zin om zelf iedere keer koffie te halen dus daarom ga ik een MoMa (Mobile Manupulator) maken om dit voor mij te laten doen. Een MoMa is een rijdende robot met daarboven op een manipulator (robot arm) geplaatst. De bedoeling is dat als iemand koffie wil deze persoon via een websit een order kan maken met bezorgpunt en de MoMa zal dan autonoom de koffie zetten en brengen naar de aangegeven plek.
 Op deze github pagina kan je alles vinden wat ik hiervoor heb gedaan.
 
-
-Hieronder is een overzicht te zien van het programma zoals het nu de gedachte is:
-![2](images/programma-overzicht.jpg)
 
 # Inhoudsopgave
 - 1. [Progressie](https://github.com/stebenpe/MobileManipulator#1-progressie)
@@ -31,12 +33,16 @@ Hieronder is een overzicht te zien van het programma zoals het nu de gedachte is
 - 7. [ZED 2i](https://github.com/stebenpe/MobileManipulator#7-zed-2i)
 - 8. [NVIDIA jetson AGX orin](https://github.com/stebenpe/MobileManipulator#8-nvidia-jetson-agx-orin)
 - 9. [Maak onderdelen](https://github.com/stebenpe/MobileManipulator#9-maak-onderdelen)
-- 10. [Ros2](https://github.com/stebenpe/MobileManipulator#10-ros2)
-- 11. [Conclusie](https://github.com/stebenpe/MobileManipulator#11-conclusie)
-- 12. [Bronnen](https://github.com/stebenpe/MobileManipulator#12-bronnen)
+- 10. [Besturingskast](https://github.com/stebenpe/MobileManipulator/blob/main/README.md#10-besturingskast)
+- 11. [Ros2](https://github.com/stebenpe/MobileManipulator#10-ros2)
+- 12. [Conclusie](https://github.com/stebenpe/MobileManipulator#11-conclusie)
+- 13. [Bronnen](https://github.com/stebenpe/MobileManipulator#12-bronnen)
 
 # Inleiding
 
+
+Hieronder is een overzicht te zien van het programma zoals het nu de gedachte is:
+![2](images/programma-overzicht.jpg)
 
 # Begrippen lijst
 
