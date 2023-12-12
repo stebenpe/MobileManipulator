@@ -50,29 +50,6 @@ Hieronder is een overzicht te zien van het programma zoals het nu de gedachte is
 2. VUE.js: Een hulpmiddel voor het maken van een website. Dit wordt gedaan met HTML, Java Script en CSS.
 3. AMR: Autonomous Mobile Robot, oftewel een autonome rijden robot.
 
-# Build
-Als eerst moet er gecontroleerd worden of alle dependencies zijn geinstalleerd die ROS2 nodig heeft voor de te builden package.
-Dit kan gedaan worden door de volgende command line uit te voeren in de ros2_ws directory
-```
-rosdep update && rosdep install --from-paths src --ignore-src -r -y
-```
-
-Gebruik het volgende in de terminal om recourses te beperken bij het build process:
-
-```
-export MAKEFLAGS="-j2 -l5"
-```
-
-Ga vervolgens naar de ros2_ws map en doe:
-```
-colcon build
-```
-
-Dit kan eventueel ook op de volgende manier als je wil dat je bij het aanpassen van de code hij dit ook meteen meeneemt.
-Let op dat als je bestandnamen veranderd of nieuwe bestanden toevoegd dit niet werkt.
-```
-colcon build --symlink-install
-```
 
 ## 1. Progressie
 Componenten:
@@ -159,7 +136,7 @@ Dit omdat deze een groot bereik heeft van 900 mm en omdat dit een cobot is. cobo
 Voor meer informatie over de Omron TM5M-900 kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/Omron%20TM5M-900) van de Omron TM5M-900.
 
 ## 7. ZED 2i
-
+Om de mok en het koffie apparaat met AI te laten manipuleren met een robot arm wordt er gebruik gemaakt van een 3D camera. Er zijn verschilende soorten en merken 3D camera's. Er is voor de ZED 2i gekozen voor de resolutie, accuratie, afstandberijk en het voor gemaakte AI depth sensing algoritme. De ZED 2i heeft 2 2K camera's die op een afstand van 12 cm van elkaar zitten. Door het verschil tussen de 2 camera's te vergelijken kan het AI algoritme hier een dipte map uithalen. Dit kan tussen de 0.3 en 20 meter zijn en met een accuratie van <1% tot 3m en <5% tot 15m. 
 
 ## 8. Nvidia jetson AGX orin
 Voor dit project is gekozen voor een NVIDIA Jetson AGX orin 64GB developer kit. De keuze is hiervoor gemaakt omdat deze veel AI power heeft door de 2048 cuda cores en 64 tensor cores. Deze woren vooral gebruikt voor de 3D camera met het AI programma en de 3D visualisatie van de robot via RVIZ2. Ook is het modelijk om de Jetson te voeden met een accu van tussen de 9 en 20 volt. In het geval van dit project wordt de Jetson gevoed door middel van de 12 volt lijn.
