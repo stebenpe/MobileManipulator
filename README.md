@@ -15,7 +15,7 @@ Datum: 11 December 2023
 # Mobile Manipulator stage NHL-Stenden
 Op een luie manier koffie halen
 
-![moma](../images/moma-koffiemachine.jpg)
+![moma](images/moma-koffiemachine.jpg)
 
 # Samenvatting
 Ik ben Steven Pennock en ik heb als stage opdracht gekregen om koffie te halen.
