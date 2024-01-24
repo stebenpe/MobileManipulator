@@ -10,12 +10,9 @@ Omdat er een frame en robot arm bovenop de LD-90 komt is deze te hoog om onder e
 
 De instellingen van de zei lidar's kunnen worden aangepast via de MobilePlanner via een laptop of PC. De instellingen zijn als volgt.
 
-Lidar 1(rechts): 
-![1](../images/laser_3-setup.png)
-
-
-Lidar 2(links):
-![2](../images/laser_4-setup.png)
+Lidar 1(rechts)            |  Lidar 2(links)
+:-------------------------:|:-------------------------:
+![1](../images/laser_3-setup.png)  |  ![2](../images/laser_4-setup.png)
 
 
 ## 3. ARCL instellingen

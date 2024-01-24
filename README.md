@@ -13,17 +13,19 @@ Datum: 11 December 2023
 
 
 # Mobile Manipulator stage NHL-Stenden
+
 Op een luie manier koffie halen
 
 ![moma](images/moma-koffiemachine.jpg)
 
 # Samenvatting
 Ik ben Steven Pennock en ik heb als stage opdracht gekregen om koffie te halen.
-Nou heb ik natuurlijk helemaal geen zin om zelf iedere keer koffie te halen dus daarom ga ik een MoMa (Mobile Manupulator) maken om dit voor mij te laten doen. Een MoMa is een rijdende robot met daarboven op een manipulator (robot arm) geplaatst. De bedoeling is dat als iemand koffie wil deze persoon via een websit een order kan maken met bezorgpunt en de MoMa zal dan autonoom de koffie zetten en brengen naar de aangegeven plek.
+Nou heb ik natuurlijk helemaal geen zin om zelf iedere keer koffie te halen dus daarom ga ik een MoMa (Mobile Manupulator) maken om dit voor mij te laten doen. Een MoMa is een rijdende robot met daarboven op een manipulator (robot arm) geplaatst. De bedoeling is dat als iemand koffie wil deze persoon via een website een order kan maken met een bezorgpunt en de MoMa zal dan autonoom de koffie zetten en brengen naar de aangegeven plek. Dit allemaal wordt aangestuurd door een NVIDIA jetson AGX orin die ros2 draait en een vue.js website server.
 Op deze github pagina kan je alles vinden wat ik hiervoor heb gedaan.
 
 
 # Inhoudsopgave
+
 - 1. [Progressie](https://github.com/stebenpe/MobileManipulator#1-progressie)
 - 2. [Onderdelen](https://github.com/stebenpe/MobileManipulator#2-onderdelen)
 - 3. [Netwerk](https://github.com/stebenpe/MobileManipulator#3-netwerk)
@@ -39,7 +41,6 @@ Op deze github pagina kan je alles vinden wat ik hiervoor heb gedaan.
 - 13. [Bronnen](https://github.com/stebenpe/MobileManipulator#12-bronnen)
 
 # Inleiding
-
 
 Hieronder is een overzicht te zien van het programma zoals het nu de gedachte is:
 ![2](images/programma-overzicht.jpg)
@@ -73,7 +74,8 @@ ROS2:
 - [X] Maken state machine voor aansturen AMR en robot arm
 - [X] ROS2 connectie maken met robot arm
 - [ ] URDF samenvoegen LD-90, 3D camera, robot arm en gripper
-- [ ] robot arm programma maken
+- [ ] Robot arm programma maken
+- [ ] Demo pick & place programma maken
 
 Website:
 - [x] Website maken
@@ -87,7 +89,7 @@ Besturingskast:
 - [x] 3D ontwerp besturingskast
 - [x] EPLAN tekening besturingskast
 - [ ] Safety PLC programma maken
-- [ ] Besturingskast bedraden
+- [X] Besturingskast bedraden
 
 Maak onderdelen:
 - [X] SolidWorks designen trap sensor
@@ -99,10 +101,15 @@ Maak onderdelen:
 - [X] onderdelen buigen, boren, tappen en verzinken
 - [X] MoMa inelkaar zetten
 - [ ] Powder coaten onderdelen
-- [ ] Designen bekerhouder met magneten
+- [X] Designen bekerhouder met magneten
 - [ ] Maken bekerhouder met magneten
 - [ ] Flexibele gripper designen en maken
 
+Toekomst plannen:
+- [ ] 3D camera programma maken met MoveIt2
+- [ ] Pick & place demo programma met 3D camera
+- [ ] Website uitbreiden met winkelmandje en que systeem toevoegen aan ros2
+- [ ] Tool wissel station voor gripper maken en programmeren
 
 ## 2. Onderdelen
 - Omron LD-90 AMR (met zei lidar)
@@ -111,6 +118,13 @@ Maak onderdelen:
 - ZED 2i 3D camera
 - NVIDIA jetson AGX orin embedded AI computer
 - MikroTik RB2011UiAS-2HnD router
+- Omron NX-EIC202 tcp/ip controller
+- Omron NX-SL3300 safety PLC
+- Omron NX-SID800 safety input kaart 2X
+- Omron NX-SOD400 safety output kaart 2X
+- Omron G7SA-2A2B DC24 met din-rail houder 6X
+- 12V 10A DC-DC converter
+- 24V 5A DC-DC converter
 
 ## 3. Netwerk
 Hieronder is een overzicht te zien van hou het huidige netwerk in elkaar zit:
@@ -118,16 +132,16 @@ Hieronder is een overzicht te zien van hou het huidige netwerk in elkaar zit:
 ![3](images/netwerk.jpg)
 
 Dit netwerk is gerealiseerd door middel van een MikriTik RB2011UiAS-2HnD.
-Deze is op de MoMa bevestigd en word gevoed door de Omron LD-90 via de 12V lijn
+Deze is op de MoMa bevestigd en word gevoed door de Omron LD-90 via de 12V lijn.
+Er is gekozen voor deze MikroTik router door het brede voltage input van 10-28V, ervaring van school met deze speciefieke router en deze lag ongebruikt op school.
 
 ## 4. Website
 De website is gemaakt door middel van VUE.js en werkt door middel van een websocket met de robot samen.
-Voor meer uitleg over de website kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/vue-webpanel#website) van de vue-webpanel.
+Voor meer uitleg over de website kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator_website?tab=readme-ov-file#website) van de vue-webpanel.
 
 ## 5. Omron LD-90
-De Omron LD-90 word gebruikt als het basisplatform van de MoMa.
-
-Voor meer informatie over de Omron LD-90 kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/omron-ld-90) van de Omron LD-90.
+De Omron LD-90 word gebruikt als het basisplatform van de MoMa. Hierop is vervolgens het frame en robotarm geplaatst.
+Voor meer informatie over de Omron LD-90 en de instellingen hiervan kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/omron-ld-90) van de Omron LD-90.
 
 ## 6. Omron TM5M-900
 De Omron TM5M-900 is de gebruikte robot arm in dit project.
@@ -136,7 +150,7 @@ Dit omdat deze een groot bereik heeft van 900 mm en omdat dit een cobot is. cobo
 Voor meer informatie over de Omron TM5M-900 kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/Omron%20TM5M-900) van de Omron TM5M-900.
 
 ## 7. ZED 2i
-Om de mok en het koffie apparaat met AI te laten manipuleren met een robot arm wordt er gebruik gemaakt van een 3D camera. Er zijn verschilende soorten en merken 3D camera's. Er is voor de ZED 2i gekozen voor de resolutie, accuratie, afstandberijk en het voor gemaakte AI depth sensing algoritme. De ZED 2i heeft 2 2K camera's die op een afstand van 12 cm van elkaar zitten. Door het verschil tussen de 2 camera's te vergelijken kan het AI algoritme hier een dipte map uithalen. Dit kan tussen de 0.3 en 20 meter zijn en met een accuratie van <1% tot 3m en <5% tot 15m. 
+Om de mok en het koffie apparaat met AI te laten manipuleren met een robot arm wordt er gebruik gemaakt van een 3D camera. Er zijn verschilende soorten en merken 3D camera's. Er is voor de ZED 2i gekozen voor de resolutie, accuratie, afstandberijk en het voor gemaakte AI depth sensing algoritme. De ZED 2i heeft 2 2K camera's die op een afstand van 12 cm van elkaar zitten. Door het verschil tussen de 2 camera's te vergelijken kan het AI algoritme hier een dipte map uithalen. Dit kan tussen de 0.3 en 20 meter zijn en met een accuratie van <1% tot 3m en <5% tot 15m.
 
 ## 8. Nvidia jetson AGX orin
 Voor dit project is gekozen voor een NVIDIA Jetson AGX orin 64GB developer kit. De keuze is hiervoor gemaakt omdat deze veel AI power heeft door de 2048 cuda cores en 64 tensor cores. Deze woren vooral gebruikt voor de 3D camera met het AI programma en de 3D visualisatie van de robot via RVIZ2. Ook is het modelijk om de Jetson te voeden met een accu van tussen de 9 en 20 volt. In het geval van dit project wordt de Jetson gevoed door middel van de 12 volt lijn.
@@ -149,7 +163,8 @@ Op de besturingskast zit de safety PLC, embedded AI computer en de DC-DC convert
 
 
 ## 11. Ros2
-Hier veranderd momenteel nog te veel in om documentatie over te schrijven.
+Voor dit project wordt ros2 gebruikt om alles aan te sturen en te laten samenwerken. Dit omdat er veel gemaakte packages te vinden zijn voor de gebruikte hardware in dit project. Ook is het heel makkelijk om code op elkaar te bouwen door gebruik te maken van verschilende nodes die met elkaat kunnen communiceren. Het is ook een erg groot voor deel dat er makkelijk stukken in C++ en python kunnen worden gemaakt die zonder problemen met elkaar kunnen samenwerken.
+voor meer onformatie over de ros2 packages en omgeving zie de [readme](https://github.com/stebenpe/MobileManipulator_ros2?tab=readme-ov-file#ros2-ws) van de ros2 repository.
 
 ## 12. Conclusie
 Er is nog geen zekerheid over de ideeen en dus nog geen conclusie.
