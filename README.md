@@ -177,7 +177,7 @@ Om de mok en het koffie apparaat met AI te laten manipuleren met een robot arm w
 Voor dit project is gekozen voor een NVIDIA Jetson AGX orin 64GB developer kit. De keuze is hiervoor gemaakt omdat deze veel AI power heeft door de 2048 cuda cores en 64 tensor cores. Deze woren vooral gebruikt voor de 3D camera met het AI programma en de 3D visualisatie van de robot via RVIZ2. Ook is het modelijk om de Jetson te voeden met een accu van tussen de 9 en 20 volt. In het geval van dit project wordt de Jetson gevoed door middel van de 12 volt lijn van de DC-DC converter aangesloten op de LD90 accu. In de Jetson is verder nog een 512GB M.2 ssd geplaatst. Hierdoor is er genoeg ruimte om programma's te developen en te testen met containers.
 
 # 11. Maak onderdelen
-Voor het maken van de MoMa zijn verschilende onderdelen gemaakt. Van de watersnijder tot de 3D printer. In de repository [MobileManipulator_maak_onderdelen](https://github.com/stebenpe/MobileManipulator/tree/main/maak%20onderdelen) is hier meer over te vinden.
+Voor het maken van de MoMa zijn verschilende onderdelen gemaakt. Van de watersnijder tot de 3D printer. In de repository [MobileManipulator_maak_onderdelen](https://github.com/stebenpe/MobileManipulator_maak_onderdelen?tab=readme-ov-file#maak-onderdelen) is hier meer over te vinden.
 
 # 12. Besturingskast
 Op de besturingskast zit de safety PLC, embedded AI computer en de DC-DC converters. Er is ook wat ruimte overgehouden voor toekomstige uitbreidingen. Voor meer informatie over de besturingskast kan je de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/besturingskast) bekijken van de map besturingskast.
