@@ -43,19 +43,22 @@ NHL-Stenden heeft in 2022 een Omron LD90 aangeschaft voor het ontwikkelen van ee
 
 # Inhoudsopgave
 
-- 1. [Progressie](https://github.com/stebenpe/MobileManipulator#1-progressie)
-- 2. [Onderdelen](https://github.com/stebenpe/MobileManipulator#2-onderdelen)
-- 3. [Netwerk](https://github.com/stebenpe/MobileManipulator#3-netwerk)
-- 4. [Website](https://github.com/stebenpe/MobileManipulator#4-website)
-- 5. [Omron LD-90](https://github.com/stebenpe/MobileManipulator#5-omron-ld-90)
-- 6. [Omron TM5M-900](https://github.com/stebenpe/MobileManipulator#6-omron-tm5m-900)
-- 7. [ZED 2i](https://github.com/stebenpe/MobileManipulator#7-zed-2i)
-- 8. [NVIDIA jetson AGX orin](https://github.com/stebenpe/MobileManipulator#8-nvidia-jetson-agx-orin)
-- 9. [Maak onderdelen](https://github.com/stebenpe/MobileManipulator#9-maak-onderdelen)
-- 10. [Besturingskast](https://github.com/stebenpe/MobileManipulator/blob/main/README.md#10-besturingskast)
-- 11. [Ros2](https://github.com/stebenpe/MobileManipulator#10-ros2)
-- 12. [Conclusie](https://github.com/stebenpe/MobileManipulator#11-conclusie)
-- 13. [Bronnen](https://github.com/stebenpe/MobileManipulator#12-bronnen)
+1. [Inleiding](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#1-inleiding)
+2. [Probleemstelling](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#2-probleemstelling)
+3. [Progressie](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#3-progressie)
+4. [Onderdelen](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#4-onderdelen)
+5. [Netwerk](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#5-netwerk)
+6. [Website](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#6-website)
+7. [Omron LD-90](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#7-omron-ld-90)
+8. [Omron TM5M-900](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#8-omron-tm5m-900)
+9. [ZED 2i](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#9-zed-2i)
+10. [NVIDIA jetson AGX orin](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#10-nvidia-jetson-agx-orin)
+11. [Maak onderdelen](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#11-maak-onderdelen)
+12. [Besturingskast](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#12-besturingskast)
+13. [Ros2](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#13-ros2)
+14. [toekomst plannen](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#14-toekomst-plannen)
+15. [Conclusie](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#15-conclusie)
+16. [Bronnen lijst](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#bronnen-lijst)
 
 # 1. Inleiding
 
