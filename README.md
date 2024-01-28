@@ -9,7 +9,7 @@ School begeleider: Rieno Moedt
 
 Gemaakt door: Steven Pennock
 
-Datum: 11 December 2023
+Datum: 28 januari 2024
 
 
 # Mobile Manipulator stage NHL-Stenden
@@ -22,7 +22,7 @@ Op een luie manier koffie halen
 
 1. ROS2: Robot Operating System 2, een veel gebruikt systeem om allerlei soorten robots aan te sturen. Er wordt geprogrammeerd met nodes, topics en services in C++ en of Python, hierin kunnen python nodes met C++ nodes samenwerken zonder problemen of instellingen via topics en services wat het erg vrij maakt. Topics zijn bruggen tussen nodes en kunnen dus data van een node doorsturen naar een andere node. Services zijn ook bruggen tussen nodes en kunnen dus data van een node doorsturen naar een andere node en ook data terug teruggeven.
 2. VUE.js: Een hulpmiddel voor het maken van een website. Dit wordt gedaan met HTML, Java Script en CSS.
-3. AMR: Autonomous Mobile Robot, oftewel een autonome rijden robot.
+3. AMR: Autonomous Mobile Robot, oftewel een autonoom rijdende robot.
 
 # Voorwoord
 
@@ -162,7 +162,7 @@ Voor meer uitleg over de website kan je kijken naar de [readme](https://github.c
 
 # 7. Omron LD-90
 De Omron LD-90 wordt gebruikt als het basisplatform van de MoMa. Hierop is vervolgens het frame en robotarm geplaatst.
-Voor meer informatie over de Omron LD-90 en de instellingen hiervan kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/omron-ld-90) van de Omron LD-90.
+Voor meer informatie over de Omron LD-90 en de instellingen hiervan kan je kijken naar de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/Omron%20LD-90#omron-ld-90) van de Omron LD-90.
 
 # 8. Omron TM5M-900
 De Omron TM5M-900 is de gebruikte robotarm in dit project.
