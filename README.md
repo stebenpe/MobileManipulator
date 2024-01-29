@@ -184,8 +184,10 @@ Op de besturingskast zit de safety PLC, embedded AI computer en de DC-DC convert
 
 
 # 13. Ros2
-Voor dit project wordt ros2 gebruikt om alles aan te sturen en te laten samenwerken. Dit omdat er veel gemaakte packages te vinden zijn voor de gebruikte hardware in dit project. Ook is het heel makkelijk om code op elkaar te bouwen door gebruik te maken van verschilende nodes die met elkaat kunnen communiceren. Het is ook een erg groot voordeel dat er makkelijk stukken in C++ en python kunnen worden gemaakt die zonder problemen met elkaar kunnen samenwerken. Hierdoor kan je je eigen voorkeur taal kiezen voor de verschilende nodes.
-voor meer onformatie over de ros2 packages en omgeving zie de [readme](https://github.com/stebenpe/MobileManipulator_ros2?tab=readme-ov-file#ros2-ws) van de ros2 repository.
+Voor dit project wordt ros2 gebruikt om alles aan te sturen en te laten samenwerken. Dit omdat er veel gemaakte packages te vinden zijn voor de gebruikte hardware in dit project. Ook is het heel makkelijk om code op elkaar te bouwen door gebruik te maken van verschilende nodes die met elkaat kunnen communiceren. Het is ook een erg groot voordeel dat er makkelijk stukken in C++ en python kunnen worden gemaakt die zonder problemen met elkaar kunnen samenwerken. Hierdoor kan je je eigen voorkeur taal kiezen voor de verschilende nodes. Hieronder is een blokdiagram te zien van het globale overzicht van de ros2 aspecten:
+![ros2 blog diagram](images/ros2_blok_diagram.png)
+
+voor meer informatie over de ros2 packages en omgeving zie de [readme](https://github.com/stebenpe/MobileManipulator_ros2?tab=readme-ov-file#ros2-ws) van de ros2 repository.
 
 # 14. Toekomst plannen
 De MoMa heeft heel veel mogelijkheden in toekomstige projecten. Hieronder zijn de mogelijkheden gescheiden in minor ASE en project industriele automatisering E en WTB. Er zijn natuurlijk zoveel mogelijkheden als je creativiteit is maar dit laat een paar voorbeelden zien.
