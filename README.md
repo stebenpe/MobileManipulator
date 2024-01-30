@@ -56,9 +56,10 @@ NHL-Stenden heeft in 2022 een Omron LD90 aangeschaft voor het ontwikkelen van ee
 11. [Maak onderdelen](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#11-maak-onderdelen)
 12. [Besturingskast](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#12-besturingskast)
 13. [Ros2](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#13-ros2)
-14. [toekomst plannen](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#14-toekomst-plannen)
-15. [Conclusie](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#15-conclusie)
-16. [Bronnen lijst](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#bronnen-lijst)
+14. [docker](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#14-docker)
+15. [toekomst plannen](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#15-toekomst-plannen)
+16. [Conclusie](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#16-conclusie)
+17. [Bronnen lijst](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#bronnen-lijst)
 
 # 1. Inleiding
 
@@ -189,22 +190,25 @@ Voor dit project wordt ros2 gebruikt om alles aan te sturen en te laten samenwer
 
 voor meer informatie over de ros2 packages en omgeving zie de [readme](https://github.com/stebenpe/MobileManipulator_ros2?tab=readme-ov-file#ros2-ws) van de ros2 repository.
 
-# 14. Toekomst plannen
+# 14. Docker
+Van dit project is ook een volledig docker bestand gemaakt. Voor het docker bestand en meer informatie hierover zie de [readme](https://github.com/stebenpe/MobileManipulator_docker) van de docker reposetory.
+
+# 15. Toekomst plannen
 De MoMa heeft heel veel mogelijkheden in toekomstige projecten. Hieronder zijn de mogelijkheden gescheiden in minor ASE en project industriële automatisering E en WTB. Er zijn natuurlijk zoveel mogelijkheden als je creativiteit is maar dit laat een paar voorbeelden zien.
 
-## 14.1 Minor ASE
+## 15.1 Minor ASE
 Voor de minor ASE zou het het mooist zijn als er gewerkt zal worden met de ZED 2i 3D camera. Hiervoor kan een AI programma worden gemaakt welke pick & place manipulaties kan doen met de robotarm. Dit kan in combinatie met een project zoals in het voorbeeld van deze repo met koffie halen. Maar dit kan natuurlijk ook met een van de voorbeelden die te zien zijn in het kopje project voorbeelden. De 3D camera kan worden geïntrigeerd in ros2 met de ros2 ZED SDK, MoveIt2, ros2 EPD (easy perception deployment) en EMD (easy manipulation deployment).
 
-## 14.2 Project industriële automatisering E en WTB
+## 15.2 Project industriële automatisering E en WTB
 De MoMa kan snel complex worden met programmeren en AI. Daarom is het niet aangeraden om de 3D camera of iets anders complex toe te voegen. Wat wel kan is verder bouwen op het gegeven ros2 demo programma in de ros2 repository. Hierbij is het het gemakkelijkste om de gegeven docker container te gebruiken, als hier wat in compleet mis gaat is het niet zo erg. Voor het programmeren is wel basis kennis in linux, docker, c++ en/of python en ros2 nodig. Mocht je dit niet hebben is het aangeraden om hiervan een paar online cursussen van te volgen. Dit hoeft niet lang en veel maar basis kennis is hier wel van nodig.
 
-## 14.3 Project voorbeelden
+## 15.3 Project voorbeelden
 - Koffie halen in combinatie met een order systeem op een website.
 - Autonoom een nieuw stuk materiaal in een CNC draai/freesmachine plaatsen als deze klaar is met zijn vorige stuk.
 - Autonome cocktail en/of bier barman.
 - Lego bouwmachine met gesorteerde stukken in bakken en een website/programma waar het design kan worden gemaakt/gekozen.
 
-# 15. Conclusie
+# 16. Conclusie
 Dit verslag beschrijft het proces van het opzetten van een mobiele manipulator (MoMa). De MoMa bestaat uit een Omron LD90 autonome rijdende robot en een Omron TM5M-900 robotarm.
 
 Er is een frame ontworpen en gebouwd om de robotarm op de LD90 te monteren. Ook is er een besturingssysteem opgezet met ROS2 om de LD90 en TM5M-900 aan te sturen. Er is een netwerk en wifi opgezet zodat de MoMa draadloos kan communiceren.

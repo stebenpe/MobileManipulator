@@ -6,7 +6,7 @@ De LD-90 heeft een ingescande kaart van de elektrotechniek gang (van G2 tot en m
 Het setup LD-90.docx is een handleiding voor het gebruiken van de Omron LD-90. Dit is een verkorte samenvatting van de grote handleiding en met de inloggegevens en instellingen hoe de LD-90 nu is ingesteld.
 
 ## 2. Zei lidar's instellen
-Omdat er een frame en robot arm bovenop de LD-90 komt is deze te hoog om onder een tafel door te gaan. En omdat de standaard lidar die er op zit alleen horizontaal kijkt op een laag niveau kan deze tafelbladen niet zien en er dus tegenaan rijden. Daarom zijn er 2 zei lidars toegevoegd. Deze kijken links en rechts van de robot verticaal. Let er wel op dat bij het inscannen van een map hij deze lidars niet meeneemt met het genereren van de map. Hierdoor denkt de LD-90 soms dat hij onder een tafel door kan gaan maar als hij er is zien de zei lidars de tafel. Om dit te voorkomen is het wel van belang om de kaart aan te passen met verboden gebieden waar de tafels en ander positiefe en negatieve objecten zijn.
+Omdat er een frame en robot arm bovenop de LD-90 komt is deze te hoog om onder een tafel door te gaan. En omdat de standaard lidar die er op zit alleen horizontaal kijkt op een laag niveau kan deze tafelbladen niet zien en er dus tegenaan rijden. Daarom zijn er 2 zei lidars toegevoegd. Deze kijken links en rechts van de robot verticaal. Let er wel op dat bij het inscannen van een map hij deze lidars niet meeneemt met het genereren van de map. Hierdoor denkt de LD-90 soms dat hij onder een tafel door kan gaan maar als hij er is zien de zei lidars de tafel. Om dit te voorkomen is het wel van belang om de kaart aan te passen met verboden gebieden waar de tafels en ander positieve en negatieve objecten zijn.
 
 De instellingen van de zei lidar's kunnen worden aangepast via de MobilePlanner via een laptop of PC. De instellingen zijn als volgt.
 
@@ -25,13 +25,13 @@ Het gaat hier vooral om de OpenTextServer en Password. De OpenTextServer moet op
 Voorbeeld van een ingestelde ARCL server setup.
 
 
-Verder moet de Outgoing ARCL connection setup worden ingesteld. Hierin wordt ingesteld naar welk ip adress de ARCL commando's worden gestuurd vanuit de LD-90.
+Verder moet de Outgoing ARCL connection setup worden ingesteld. Hierin wordt ingesteld naar welk ip adres de ARCL commando's worden gestuurd vanuit de LD-90.
 
 
 
 1. OutgoingHostname: 192.168.44.13
 
-Dit is het ip adress van de computer/laptop welke de commando's ontvangt en verwerkt met ros2. In dit geval is dit de Jetson AGX orin. Deze heeft via de MikroTik router een statisch ip adress gekregen. Het is ook sterk aangeraden om dit ip adress op de router statisch in te stellen omdat anders dit iedere keer veranderd moet worden als de router een nieuw ip adress geeft.
+Dit is het ip adres van de computer/laptop welke de commando's ontvangt en verwerkt met ros2. In dit geval is dit de Jetson AGX orin. Deze heeft via de MikroTik router een statisch ip adres gekregen. Het is ook sterk aangeraden om dit ip adres op de router statisch in te stellen omdat anders dit iedere keer veranderd moet worden als de router een nieuw ip adres geeft.
 
 2. OutgoingPort: 7179
 
@@ -39,7 +39,7 @@ Dit is het port nummer dat wordt gebruikt voor de uitgaande ARCL commando's. Dit
 
 3. SendStatusInterval: 0
 
-Dit is hoe vaak het ARCL command word verstuurt maar omdat er gebruik wordt gemaakt van meerdere commando's met verschilende intervals zetten we deze uit door hem op 0 te zetten.
+Dit is hoe vaak het ARCL command word verstuurt maar omdat er gebruik wordt gemaakt van meerdere commando's met verschillende intervals zetten we deze uit door hem op 0 te zetten.
 
 4. OutgoingSocketTimeoutInMins: -1.0
 
@@ -47,7 +47,7 @@ Dit geeft aan na hoeveel minuten de ARCL connectie moet sluiten omdat hij niks o
 
 5. RequireConnectionToPathPlan: True
 
-Dit is een veiligheids instelling wat er voor zorgt dat als er tijdens het rijden geen connectie meer is met de ARCL client (ros2) de robot stopt met rijden. Hiervoor zetten we deze instelling op True.
+Dit is een veiligheidsinstelling wat er voor zorgt dat als er tijdens het rijden geen connectie meer is met de ARCL client (ros2) de robot stopt met rijden. Hiervoor zetten we deze instelling op True.
 
 
 Hieronder een voorbeeld van hoe dit is ingesteld:
@@ -73,7 +73,7 @@ Dit verzend de data van de hoofd lidar op de LD-90 naar de ARCL client. Hierdoor
 
 4. OutgoingCommands2Seconds: 0.5
 
-De lidar wordt met een frequentie van 2 HZ geupdate. Dit zou ook sneller kunnen maar omdat het puur voor het visualiseren is is dit niet zo nodig. Het kost meer reken kracht als deze sneller wordt gezet.
+De lidar wordt met een frequentie van 2 HZ geüpdate. Dit zou ook sneller kunnen maar omdat het puur voor het visualiseren is is dit niet zo nodig. Het kost meer reken kracht als deze sneller wordt gezet.
 
 5. OutgoingCommands3: GetGoals | Odometer | ApplicationFaultQuery
 
@@ -90,4 +90,4 @@ Voorbeeld instellingen van de outgoing ARCL command setup
 
 
 ## 4. Voeding andere onderdelen
-Op de LD-90 zitten meerdere voedings connectoren voor het voeden van apparaten die op de LD-90 worden geplaatst. Denk hierbij aan de safety PLC, router en embedded AI computer. De LD-90 heeft vaste voedings outputs van 5V en 12V maar deze zijn maximaal 1A, daarom is er gebruik gemaakt van DC-DC converters. Deze zijn aangesloten op de Battrry output connector, deze is doorverbonden met de accu met een zekering van 2X 5A voor een totaal van 10A. Er zijn een totaal van 2 DC-DC converters, een naar 12V en een naar 24V. De 12V DC-DC converter zit op BatteryOut_1 en de 24V DC-DC converter zit op BatteryOut_2. Voor meer informatie over de vodingen en componenten bekijk de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/besturingskast) van de besturingskast.
+Op de LD-90 zitten meerdere voedings-connectoren voor het voeden van apparaten die op de LD-90 worden geplaatst. Denk hierbij aan de safety PLC, router en embedded AI computer. De LD-90 heeft vaste voedings-outputs van 5V en 12V maar deze zijn maximaal 1A, daarom is er gebruik gemaakt van DC-DC converters. Deze zijn aangesloten op de Batterij output connector, deze is doorverbonden met de accu met een zekering van 2X 5A voor een totaal van 10A. Er zijn een totaal van 2 DC-DC converters, een naar 12V en een naar 24V. De 12V DC-DC converter zit op BatteryOut_1 en de 24V DC-DC converter zit op BatteryOut_2. Voor meer informatie over de voedingen en componenten bekijk de [readme](https://github.com/stebenpe/MobileManipulator/tree/main/besturingskast) van de besturingskast.
