@@ -21,11 +21,7 @@ Op een luie manier koffie halen
 
 Hieronder is een demo te zien van het project:
 
-![moma](MoMa_comresed_1080.mp4)
-
-<video width="320" height="240" controls>
-  <source src="MoMa_comresed_1080.mp4" type="video/mp4">
-</video>
+[![MoMa video](https://img.youtube.com/vi/wf4gKIfRmtc/0.jpg)](https://www.youtube.com/watch?v=wf4gKIfRmtc)
 
 # Begrippen lijst
 
