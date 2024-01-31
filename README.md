@@ -21,7 +21,7 @@ Op een luie manier koffie halen
 
 Hieronder is een demo te zien van het project:
 
-<video src="MoMa.mp4" controls title="Title"></video>
+<video src="MoMa_comresed_1080.mp4" controls title="Title"></video>
 
 # Begrippen lijst
 
