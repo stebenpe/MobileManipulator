@@ -21,7 +21,11 @@ Op een luie manier koffie halen
 
 Hieronder is een demo te zien van het project:
 
-<video src="MoMa_comresed_1080.mp4" controls title="Title"></video>
+![moma](MoMa_comresed_1080.mp4)
+
+<video width="320" height="240" controls>
+  <source src="MoMa_comresed_1080.mp4" type="video/mp4">
+</video>
 
 # Begrippen lijst
 
