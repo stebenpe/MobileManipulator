@@ -18,6 +18,11 @@ Op een luie manier koffie halen
 
 ![moma](images/moma-koffiemachine.jpg)
 
+
+Hieronder is een demo te zien van het project:
+
+<video src="MoMa.mp4" controls title="Title"></video>
+
 # Begrippen lijst
 
 1. ROS2: Robot Operating System 2, een veel gebruikt systeem om allerlei soorten robots aan te sturen. Er wordt geprogrammeerd met nodes, topics en services in C++ en of Python, hierin kunnen python nodes met C++ nodes samenwerken zonder problemen of instellingen via topics en services wat het erg vrij maakt. Topics zijn bruggen tussen nodes en kunnen dus data van een node doorsturen naar een andere node. Services zijn ook bruggen tussen nodes en kunnen dus data van een node doorsturen naar een andere node en ook data terug teruggeven.
