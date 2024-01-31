@@ -39,6 +39,8 @@ Ook wil ik Rieno Moedt bedanken voor meedenken met stukken van de opdracht en mi
 
 Verder wil ik Hendrik Bijlsma bedanken voor het helpen met de programmeer en linux problemen. Zonder jou was het mij niet gelukt om zo ver te komen met het project, je stond altijd klaar voor me vragen en daar ben ik zeer dankbaar voor.
 
+Ook wil ik Thimo de Wolf van Omron bedanken voor het meedenken met de MoMa en het helpen met de safety PLC. Het was fijn om een contact te hebben bij Omron waar ik altijd bij kon voor vragen.
+
 Als laatste wil ik Jan Landstra bedanken voor het openstellen van de werktuigbouwkunde werkplaats. Door jou heb ik het frame kunnen maken en wat kunnen proeven van wat werktuigbouwkunde doet.
 
 # Samenvatting
@@ -57,7 +59,7 @@ NHL-Stenden heeft in 2022 een Omron LD90 aangeschaft voor het ontwikkelen van ee
 7. [Omron LD-90](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#7-omron-ld-90)
 8. [Omron TM5M-900](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#8-omron-tm5m-900)
 9. [ZED 2i](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#9-zed-2i)
-10. [NVIDIA jetson AGX orin](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#10-nvidia-jetson-agx-orin)
+10. [NVIDIA Jetson AGX orin](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#10-nvidia-jetson-agx-orin)
 11. [Maak onderdelen](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#11-maak-onderdelen)
 12. [Besturingskast](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#12-besturingskast)
 13. [Ros2](https://github.com/stebenpe/MobileManipulator?tab=readme-ov-file#13-ros2)
@@ -74,7 +76,7 @@ Op deze github pagina kan je hier alles van vinden.
 
 # 2. Probleemstelling
 
-Hoe kan de Omron LD90 mobiele robot en TM5M-900 robotarm geïntegreerd worden tot één werkend geheel, zodat deze als MoMa (Mobiele Manipulator) ingezet kan worden in projecten en minoren van NHL-Stenden?
+Op welke manier kunnen de Omron LD90 mobiele robot en TM5M-900 robotarm naadloos worden geïntegreerd om samen te werken als een gecoördineerde Mobiele Manipulator (MoMa) voor toepassing in projecten en minoren aan NHL-Stenden?
 
 
 # 3. Progressie
@@ -214,17 +216,21 @@ De MoMa kan snel complex worden met programmeren en AI. Daarom is het niet aange
 - Lego bouwmachine met gesorteerde stukken in bakken en een website/programma waar het design kan worden gemaakt/gekozen.
 
 # 16. Conclusie
-Dit verslag beschrijft het proces van het opzetten van een mobiele manipulator (MoMa). De MoMa bestaat uit een Omron LD90 autonome rijdende robot en een Omron TM5M-900 robotarm.
+Het doel van dit project was om een instapklare MoMa te maken voor de minor ASE en andere studenten projecten/minoren. Naast dit doel was er ook nog de extra 3D camera bedacht. Deze is bedoeld om in 3D objecten te vinden en deze met de robotarm op te laten pakken. Voor deze doelen is het volgende gerealiseerd:
 
-Er is een frame ontworpen en gebouwd om de robotarm op de LD90 te monteren. Ook is er een besturingssysteem opgezet met ROS2 om de LD90 en TM5M-900 aan te sturen. Er is een netwerk en wifi opgezet zodat de MoMa draadloos kan communiceren.
+Er is een frame ontworpen en gebouwd om de robotarm op de LD90 te monteren met daarin een besturingskast. Ook is er een besturingssysteem opgezet met ROS2 om de LD90 en TM5M-900 aan te sturen. Hier is ook een netwerk met wifi voor opgezet zodat de MoMa draadloos kan communiceren.
 
-Verder is er een voorbeeldproject gemaakt waarbij de MoMa via een website opdracht kan krijgen om koffie te halen bij een koffiemachine. Dit laat zien wat de mogelijkheden zijn van de MoMa.
+Verder is er een voorbeeldproject gemaakt waarbij de MoMa via een website opdracht kan krijgen om koffie te halen bij een koffiemachine. Dit laat zien wat de mogelijkheden zijn van de MoMa voor de minor ASE en andere projecten/minoren.
 
-De MoMa is nu klaar om ingezet te worden voor projecten en minoren van verschillende opleidingen bij NHL-Stenden zoals elektrotechniek, werktuigbouwkunde en ICT. Dit verslag beschrijft het hele proces en de code en 3D modellen zijn beschikbaar op de verschillende GitHub pagina's.
+Doordat deze stukken nu gerealiseerd zijn is de MoMa nu klaar om ingezet te worden voor projecten en minoren van verschillende opleidingen bij NHL-Stenden zoals elektrotechniek, werktuigbouwkunde en ICT. Het doel van het instapklaar maken is dus behaald.
 
-De MoMa is een mooie aanwinst voor NHL-Stenden studenten die een uitdagende opdracht willen waar ze echt al hun creativiteit in kwijt kunnen.
+Echter is niet alles gelukt, de volgende aspecten zijn deels of niet gerealiseerd:
 
-Het is mij niet gelukt om alle doelen te halen met de MoMa zoals de ToF sensor en de 3D camera. Door een paar tegenslagen en levertijden was er niet genoeg tijd hiervoor. Alsnog ben ik erg blij en trots op het resultaat en ik hoop dat dit veel in projecten kan worden gebruikt.
+De ToF sensoren zijn geprogrammeerd en er is een PCB voor gemaakt in altium. Echter is de PCB nog niet gemaakt en getest in combinatie met de safety PLC.
+
+De 3D camera is getest in ros2 en de MoveIt2 van de robotarm is getest alleen het samenvoegen van deze 2 was niet gelukt wegens tijdgebrek.
+
+Ook al is niet alles gelukt is de MoMa alsnog een mooie aanwinst voor de NHL-Stenden minor ASE en studenten die een uitdagende opdracht willen waar ze echt al hun creativiteit in kwijt kunnen.
 
 # Bronnen lijst
 
